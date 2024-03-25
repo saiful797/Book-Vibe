@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div className="flex justify-between bg-slate-100 p-16 rounded-xl mt-10">
+        <div className="flex justify-between bg-slate-100 p-16 rounded-xl mt-10 mb-16">
             <div className="w-3/4 space-y-10">
                 <p className="text-4xl md:text-6xl">Books to freshen up</p>
                 <p className="text-4xl md:text-6xl">your bookshelf</p>
