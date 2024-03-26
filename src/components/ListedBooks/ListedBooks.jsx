@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredReadBooksDetails } from "../../utility/localStorage";
+import ListedBooksDetails from "../ListedBooksDetails/ListedBooksDetails";
 
 const ListedBooks = () => {
 
@@ -17,9 +18,9 @@ const ListedBooks = () => {
     },[])
 
     return (
-        <div>
+        <div className="mt-10">
             <div className="rounded-2xl w-full h-32 pt-1 bg-slate-100 flex justify-center items-center">
-                <p className="text-6xl font-bold">Books: {readBooksItem.length}</p>
+                <p className="text-6xl font-bold">Books</p>
             </div>
             <div className="text-center mt-10 mb-10">
                 <select className="select select-success max-w-xs bg-[#23BE0A] font-medium text-white">
@@ -32,15 +33,17 @@ const ListedBooks = () => {
                     <option>Fullmetal Alchemist</option>
                 </select>
             </div>
-            <div className="flex gap-2">
-                <div>
-                    <button className="btn bg-white border-slate-400">Read Books</button>
+            <div role="tablist" className="tabs tabs-lifted tabs-lg">
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" />
+                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                    {
+                        readBooksItem.map(book => <ListedBooksDetails key={book.bookId}  book={book}></ListedBooksDetails>)
+                    }
                 </div>
-                <div>
-                    <button className="btn bg-white border-slate-400"> Wish Books</button>
-                </div>
+
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wish Books" checked />
+                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 2</div>
             </div>
-            <hr></hr>
         </div>
     );
 };

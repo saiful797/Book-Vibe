@@ -10,7 +10,6 @@ import Home from './components/Home/Home';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import BookDetails from './components/BookDetails/BookDetails';
-
 const router = createBrowserRouter([
   {
     path: "/",

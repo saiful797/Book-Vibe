@@ -33,7 +33,7 @@
         "review": "The Goldfinch by Donna Tartt is an epic tale of loss, redemption, and the transformative power of art. The story follows Theo Decker, who survives a tragic terrorist attack at the Metropolitan Museum of Art that kills his mother. In the chaos that ensues, Theo steals a priceless painting, 'The Goldfinch,' setting off a chain of events that shape the course of his life. Tartt's prose is lush and immersive, drawing readers into Theo's world as he navigates grief, addiction, and the pursuit of identity. The novel is a sprawling masterpiece that spans continents and decades, exploring themes of fate, morality, and the enduring value of beauty.",
         "totalPages": 771,
         "rating": 4.5,
-        "category": "Literary Fiction",
+        "category": "Fiction",
         "tags": ["Art", "Coming-of-Age", "Drama"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 2013
@@ -46,7 +46,7 @@
         "review": "The Martian by Andy Weir is a riveting science fiction novel that combines suspense, humor, and ingenuity in a thrilling survival story set on the Red Planet. Mark Watney, an astronaut, is presumed dead and left behind by his crew during a mission to Mars. Alone and with limited resources, Watney must rely on his scientific knowledge and resourcefulness to survive while awaiting rescue. Weir's meticulous attention to scientific detail lends authenticity to the narrative, making the challenges Watney faces feel both harrowing and plausible. The novel is as much a celebration of human resilience and the spirit of exploration as it is a gripping adventure through the harsh landscape of Mars.",
         "totalPages": 369,
         "rating": 4.8,
-        "category": "Science Fiction",
+        "category": "Fiction",
         "tags": ["Survival", "Adventure", "Space"],
         "publisher": "Crown Publishers",
         "yearOfPublishing": 2011
@@ -85,7 +85,7 @@
         "review": "Pride and Prejudice by Jane Austen is a beloved classic that continues to enchant readers with its wit, romance, and social commentary. Set in the English countryside during the Regency era, the novel follows the spirited Elizabeth Bennet as she navigates the complexities of love and marriage in a society governed by strict social norms. Austen's sharp observations of human nature and her keen understanding of the dynamics between men and women make for a delightful and engaging read. From the iconic love-hate relationship between Elizabeth and Mr. Darcy to the colorful cast of characters that populate the novel, Pride and Prejudice is a true literary gem that has stood the test of time.",
         "totalPages": 432,
         "rating": 4.8,
-        "category": "Romantic Fiction",
+        "category": "Fiction",
         "tags": ["Regency Era", "Satire", "Relationships"],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
@@ -98,7 +98,7 @@
         "review": "To Kill a Mockingbird by Harper Lee is a timeless masterpiece that explores themes of racial injustice, morality, and compassion in the American South. Set in the fictional town of Maycomb, Alabama, during the 1930s, the novel follows young Scout Finch as she grapples with the complexities of adulthood and witnesses her father, Atticus Finch, defend a black man falsely accused of raping a white woman. Lee's poignant prose and indelible characters, including the enigmatic Boo Radley and the wise Atticus, make for a powerful and thought-provoking read that resonates with readers of all ages.",
         "totalPages": 281,
         "rating": 4.7,
-        "category": "Classic Fiction",
+        "category": "Fiction",
         "tags": ["Race", "Morality", "Southern Gothic"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
@@ -111,7 +111,7 @@
         "review": "The Hobbit by J.R.R. Tolkien is a timeless adventure that introduces readers to the enchanting world of Middle-earth. Bilbo Baggins, a hobbit of the Shire, embarks on a journey to reclaim the lost kingdom of Erebor from the dragon Smaug. Along the way, he encounters trolls, goblins, and other creatures, and discovers a magical ring that will shape the fate of Middle-earth. Tolkien's richly imagined world, populated by dwarves, elves, and wizards, is brought to life through his vivid descriptions and lyrical prose. The Hobbit is a tale of heroism, friendship, and the power of ordinary individuals to change the course of history.",
         "totalPages": 310,
         "rating": 4.7,
-        "category": "Fantasy Fiction",
+        "category": "Fiction",
         "tags": ["Adventure", "Magic", "Quest"],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
