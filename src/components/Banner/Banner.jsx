@@ -7,7 +7,7 @@ const Banner = () => {
                 <p className="text-4xl md:text-6xl font-medium">Books to freshen up</p>
                 <p className="text-4xl md:text-6xl font-medium">your bookshelf</p>
 
-                <div>
+                <div className="ml-24">
                     <Link to="/listedBooks">
                         <button className="btn bg-[#23BE0A] text-white text-xl">View The List</button>
                     </Link>
