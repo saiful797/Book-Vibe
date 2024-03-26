@@ -1,4 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveReadBooksDetails } from "../../utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -9,6 +12,12 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
 
     const {image,bookName,author,category,review,tags,totalPages,publisher,yearOfPublishing,rating} = book;
+
+    const handleBooksRead = () =>{
+        saveReadBooksDetails(idInt);
+        toast('Added Successfully');
+    }
+
     return ( 
         <div className="flex justify-around mt-10 gap-5 h-screen">
             <div className="w-1/2 p-5 bg-slate-100 rounded-xl flex justify-center items-center">
@@ -46,10 +55,11 @@ const BookDetails = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                    <button className="btn bg-white border border-[#84d478] text-lg font-medium">Read</button>
+                    <button onClick={handleBooksRead} className="btn bg-white border border-[#84d478] text-lg font-medium">Read</button>
                     <button className="btn bg-[#59C6D2] text-lg font-medium">Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
