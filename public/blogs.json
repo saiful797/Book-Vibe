@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "bookName": "To Kill a Mockingbird",
+      "image": "https://i.ibb.co/wc6qLRW/To-Kill-a-Mockingbird.jpg",
+      "reviews":"To Kill a Mockingbird is a timeless classic that delves into the themes of racial injustice, morality, and empathy. The characters are intricately crafted, drawing readers into their world with vivid detail. Harper Lee's masterful storytelling makes this novel a must-read for people of all ages."
+    },
+    {
+      "id": 2,
+      "bookName": "1984",
+      "image": "https://i.ibb.co/bWCZHtq/1984.jpg",
+      "reviews":"George Orwell's 1984 is a chilling dystopian tale that serves as a warning about the dangers of totalitarianism. The story follows Winston Smith as he navigates a world of government surveillance and thought control. Orwell's exploration of power, manipulation, and the erosion of truth remains as relevant today as it was when the book was first published."
+    },
+    {
+      "id": 3,
+      "bookName": "The Great Gatsby",
+      "image": "https://i.ibb.co/p3qg2Pf/great-gatsby.jpg",
+      "reviews":"F. Scott Fitzgerald's The Great Gatsby is a captivating portrayal of the Jazz Age and the American Dream. Through the lens of narrator Nick Carraway, readers are introduced to the enigmatic Jay Gatsby and his pursuit of wealth and love. Fitzgerald's evocative prose and keen insights into society make this novel a timeless classic."
+    },
+    {
+      "id": 4,
+      "bookName": "Pride and Prejudice",
+      "image": "https://i.ibb.co/9v94JTx/pride.jpg",
+      "reviews":
+        "Jane Austen's Pride and Prejudice is a delightful romantic comedy filled with wit and charm. Set in Regency England, the novel follows the spirited Elizabeth Bennet as she navigates the complexities of love and social hierarchy. Austen's sharp observations of human nature and her timeless exploration of love and marriage continue to enchant readers."
+    }
+  ]
+  

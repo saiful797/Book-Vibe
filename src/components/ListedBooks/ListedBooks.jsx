@@ -32,25 +32,24 @@ const ListedBooks = () => {
                 <p className="text-6xl font-bold">Books</p>
             </div>
             <div className="text-center mt-10 mb-10">
-                <select className="select select-success max-w-xs bg-[#23BE0A] font-medium text-white">
+                <select className="select select-success max-w-xs bg-[#23BE0A] font-medium text-white text-xl">
                     <option selected>Sort By</option>
-                    <option>One Piece</option>
-                    <option>Naruto</option>
-                    <option>Death Note</option>
-                    <option>Attack on Titan</option>
-                    <option>Bleach</option>
-                    <option>Fullmetal Alchemist</option>
-                </select>
+                    <option>Fiction</option>
+                    <option>Thriller</option>
+                    <option>Fantasy</option>
+                    <option>Fable</option>
+                    <option>Mystery</option>
+                </select> 
             </div>
             <div role="tablist" className="tabs tabs-lifted tabs-lg">
-                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" />
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" checked/>
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
                     {
                         readBooksItem.map(book => <ListedBooksDetails key={book.bookId}  book={book}></ListedBooksDetails>)
                     }
                 </div>
 
-                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wish Books" checked />
+                <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist Books" />
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
                     {
                         wishListBooksItem.map(book => <WishListBooks key={book.bookId} book={book}></WishListBooks>)
