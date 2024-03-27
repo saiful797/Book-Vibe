@@ -1,10 +1,10 @@
-<!--Code Link-->
+i. **Code Link**:
 https://github.com/programming-hero-web-course-4/b9a8-book-vibe-saiful797
 
-<!--Live Link-->
+ii. **Live Link**:
 https://book-vibe.netlify.app/
 
-<!-- features and characteristics -->
+iii. **features and characteristics**:
 For a BOOK Vibe website, focusing on books, reading, and related content, here are some features and characteristics you might consider incorporating:
 
 1. **Homepage**:
