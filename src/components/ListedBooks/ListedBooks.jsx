@@ -1,19 +1,28 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredReadBooksDetails } from "../../utility/localStorage";
+import { getStoredReadBooksDetails, getStoredWishListBooks } from "../../utility/localStorage";
 import ListedBooksDetails from "../ListedBooksDetails/ListedBooksDetails";
+import WishListBooks from "../WishListBooks/WishListBooks";
 
 const ListedBooks = () => {
 
     const [readBooksItem, setReadBooksItem] = useState([]);
+    const [wishListBooksItem, setWishListBooksItem] =useState([]);
 
     const books = useLoaderData();
+
     useEffect(()=>{
         const storedBookId = getStoredReadBooksDetails();
+        const storedWishListBookId = getStoredWishListBooks();
         if(books.length > 0){
             const booksReads = books.filter(book => storedBookId.includes(book.bookId));
 
             setReadBooksItem(booksReads);
+        }
+        if(books.length > 0){
+            const booksWishes = books.filter(book => storedWishListBookId.includes(book.bookId));
+
+            setWishListBooksItem(booksWishes);
         }
     },[])
 
@@ -42,7 +51,11 @@ const ListedBooks = () => {
                 </div>
 
                 <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wish Books" checked />
-                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">Tab content 2</div>
+                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                    {
+                        wishListBooksItem.map(book => <WishListBooks key={book.bookId} book={book}></WishListBooks>)
+                    }
+                </div>
             </div>
         </div>
     );

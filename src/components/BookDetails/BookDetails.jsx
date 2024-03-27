@@ -1,7 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveReadBooksDetails } from "../../utility/localStorage";
+import { saveReadBooksDetails, saveWishListBooks } from "../../utility/localStorage";
+import Tag from "../Tag/Tag";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -15,6 +16,11 @@ const BookDetails = () => {
 
     const handleBooksRead = () =>{
         saveReadBooksDetails(idInt);
+        toast('Added Successfully');
+    }
+
+    const handleWishListBook = () =>{
+        saveWishListBooks(idInt);
         toast('Added Successfully');
     }
 
@@ -32,9 +38,11 @@ const BookDetails = () => {
                 <p><span className="text-xl font-bold">Review: </span>{review}</p>
                 <div className="flex items-center gap-3">
                     <p className="text-xl font-medium">Tags: </p>
-                    <button className="btn text-[#23BE0A] rounded-3xl">#{tags[0]}</button>
-                    <button className="btn text-[#23BE0A] rounded-3xl">#{tags[1]}</button>
-                    <button className="btn text-[#23BE0A] rounded-3xl">#{tags[2]}</button>
+                    <div className="flex gap-5">
+                        {
+                            tags.map(tag => <Tag key={tag} tag={tag}></Tag>)
+                        }
+                    </div>
                 </div>
                 <hr />
                 <div className="flex gap-5">
@@ -56,7 +64,7 @@ const BookDetails = () => {
                 
                 <div className="flex gap-3">
                     <button onClick={handleBooksRead} className="btn bg-white border border-[#84d478] text-lg font-medium">Read</button>
-                    <button className="btn bg-[#59C6D2] text-lg font-medium">Wishlist</button>
+                    <button onClick={handleWishListBook} className="btn bg-[#59C6D2] text-lg font-medium">Wishlist</button>
                 </div>
             </div>
             <ToastContainer />

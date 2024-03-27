@@ -1,3 +1,4 @@
+//For Read Books with local storage
 const getStoredReadBooksDetails = () => {
     const storedReadBook = localStorage.getItem('read-books');
     if(storedReadBook){
@@ -15,4 +16,23 @@ const saveReadBooksDetails = (id) => {
     }
 }
 
-export {saveReadBooksDetails,getStoredReadBooksDetails}
+//For Wish List Books with local storage
+const getStoredWishListBooks = () =>{
+    const storedWishListBook = localStorage.getItem('wish-books');
+    if(storedWishListBook){
+        return JSON.parse(storedWishListBook);
+    }
+    return [];
+}
+
+const saveWishListBooks = (id) => {
+    const storedWishListBooks = getStoredWishListBooks();
+    const exists = storedWishListBooks.find(bookId => bookId === id)
+    if(!exists){
+        storedWishListBooks.push(id);
+        localStorage.setItem('wish-books', JSON.stringify(storedWishListBooks));
+    }
+}
+
+
+export {getStoredReadBooksDetails,saveReadBooksDetails,getStoredWishListBooks,saveWishListBooks}

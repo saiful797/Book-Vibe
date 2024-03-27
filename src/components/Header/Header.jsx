@@ -29,10 +29,10 @@ const Header = () => {
             </div>
             <div className="navbar-end flex gap-2">
                 <div className="">
-                    <a className="btn bg-[#23BE0A] text-white font-medium w-32">Sign In</a>
+                    <a className="btn bg-[#23BE0A] text-white font-medium w-24 md:w-32">Sign In</a>
                 </div>
                 <div>
-                    <a className="btn bg-[#59C6D2] text-white font-medium w-32">Sign Up</a>
+                    <a className="btn bg-[#59C6D2] text-white font-medium w-24 md:w-32">Sign Up</a>
                 </div>
             </div>
         </div>
