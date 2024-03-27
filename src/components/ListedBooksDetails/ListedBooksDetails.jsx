@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ListedBooksDetails = ({book}) => {
     const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book;
     return (
-        <div className="card card-side shadow-xl mt-10 border border-gray-400 md:gap-5 flex-col md:flex ">
+        <div className="card card-side shadow-xl mt-10 border border-gray-400 md:gap-5 ">
             <div className='p-5 bg-slate-100 rounded-2xl'>
                 <figure><img className='w-56 h-96 rounded-xl' src={image} alt="book"/></figure>
             </div>
