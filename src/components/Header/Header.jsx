@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const links=<>
-        <div className="gap-4 md:flex">
+        <div className="gap-4 md:flex font-medium">
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
             <li><NavLink to="/pageRead">Pages to Read</NavLink></li>
