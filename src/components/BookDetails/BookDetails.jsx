@@ -17,7 +17,7 @@ const BookDetails = () => {
     const handleBooksRead = () =>{
         const id1 = saveReadBooksDetails(idInt);
         if(id1 === idInt){
-            toast.error('Already Exist', {
+            toast.error('Book Already Read!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -28,7 +28,7 @@ const BookDetails = () => {
             });
         }
         else{
-            toast.success('Added Successfully', {
+            toast.success('Added Successfully!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -45,7 +45,7 @@ const BookDetails = () => {
         const id2 = saveWishListBooks(idInt);
 
         if(id2 === idInt){
-            toast.error('Already Exist', {
+            toast.error('Book Already Added Wishlist!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -56,7 +56,7 @@ const BookDetails = () => {
             });
         }
         else{
-            toast.success('Added Successfully', {
+            toast.success('Added Successfully!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -70,11 +70,11 @@ const BookDetails = () => {
     }
 
     return ( 
-        <div className="flex md:justify-around mt-10 gap-5 h-screen">
-            <div className="w-1/2 p-5 bg-slate-100 rounded-xl flex justify-center items-center">
+        <div className="md:flex md:justify-around mt-10 gap-5 p-5 md:p-0 border border-green-500 rounded-xl space-y-3 md:space-y-0">
+            <div className="w-full md:w-1/2 p-5 bg-slate-100 rounded-xl flex justify-center items-center">
                 <img className="h-full" src={image} alt="" />
             </div>
-            <div className="w-1/2 h-full space-y-3">
+            <div className="w-full md:w-1/2 h-full space-y-3">
                 <h1 className="text-3xl font-bold">{bookName}</h1>
                 <h4 className="text-xl font-medium">By: {author}</h4>
                 <hr />

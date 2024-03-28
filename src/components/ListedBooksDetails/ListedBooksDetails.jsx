@@ -3,7 +3,7 @@ import Tag from '../Tag/Tag';
 import { Link } from 'react-router-dom';
 
 const ListedBooksDetails = ({book}) => {
-    const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating,review} = book;
+    const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book;
     return (
 
         <div className='md:flex shadow-xl w-full border border-green-500 rounded-2xl mt-10'>
@@ -16,7 +16,6 @@ const ListedBooksDetails = ({book}) => {
                 <hr />
                 <h5 className='text-lg font-medium'>{category}</h5>
                 <hr />
-                <p><span>Review:</span>{review}</p>
                 <div className='md:flex items-center gap-2'>
                     <div className='flex items-center space-x-2'>
                         <h1 className='text-xl font-medium'>Tags:</h1>
