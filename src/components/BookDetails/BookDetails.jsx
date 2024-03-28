@@ -15,9 +15,8 @@ const BookDetails = () => {
     const {image,bookName,author,category,review,tags,totalPages,publisher,yearOfPublishing,rating} = book;
 
     const handleBooksRead = () =>{
-        const id = saveReadBooksDetails(idInt);
-        if(id === idInt){
-            // toast('Already Exist');
+        const id1 = saveReadBooksDetails(idInt);
+        if(id1 === idInt){
             toast.error('Already Exist', {
                 position: "top-right",
                 autoClose: 5000,
@@ -43,9 +42,9 @@ const BookDetails = () => {
     }
 
     const handleWishListBook = () =>{
-        const id = saveWishListBooks(idInt);
-        if(id === idInt){
-            // toast('Already Exist');
+        const id2 = saveWishListBooks(idInt);
+
+        if(id2 === idInt){
             toast.error('Already Exist', {
                 position: "top-right",
                 autoClose: 5000,
