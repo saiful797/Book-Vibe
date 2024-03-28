@@ -11,13 +11,12 @@ For a BOOK Vibe website, focusing on books, reading, and related content, here a
    - Clean and inviting design with easy navigation.
    - Featured books section highlighting popular or recommended reads.
    - Latest blog posts or news related to books and literature.
-   - Search bar for users to find specific books or topics quickly.
    - Sign-up form for newsletters or membership, if applicable.
 
 2. **Listed Books**:
    - Categorized book listings for easy browsing (e.g., by genre, author, bestsellers).
    - Book thumbnails with titles, authors, brief descriptions, and user ratings.
-   - Filters and sorting options for refining search results (e.g., by release date, ratings, price).
+   - Filters and sorting options for refining search results (e.g., by release date, ratings..).
 
 3. **Pages to Read**:
    - Virtual library interface for reading books online.

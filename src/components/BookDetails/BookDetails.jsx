@@ -16,8 +16,10 @@ const BookDetails = () => {
 
     const handleBooksRead = () =>{
         const id1 = saveReadBooksDetails(idInt);
+        saveWishListBooks(idInt);
+
         if(id1 === idInt){
-            toast.error('Book Already Read!', {
+            toast.error('You Have Already Read the book!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -28,7 +30,7 @@ const BookDetails = () => {
             });
         }
         else{
-            toast.success('Added Successfully!', {
+            toast.success('Read the Book!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -45,7 +47,7 @@ const BookDetails = () => {
         const id2 = saveWishListBooks(idInt);
 
         if(id2 === idInt){
-            toast.error('Book Already Added Wishlist!', {
+            toast.error('Book Already Read or Added Wishlist!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -56,7 +58,7 @@ const BookDetails = () => {
             });
         }
         else{
-            toast.success('Added Successfully!', {
+            toast.success('Book Added Wishlist Successfully!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -70,7 +72,7 @@ const BookDetails = () => {
     }
 
     return ( 
-        <div className="md:flex md:justify-around mt-10 gap-5 p-5 md:p-0 border border-green-500 rounded-xl space-y-3 md:space-y-0">
+        <div className="md:flex md:justify-around mt-10 gap-5 p-5 md:p-0 border border-green-500 rounded-xl space-y-3 md:space-y-0 mb-10">
             <div className="w-full md:w-1/2 p-5 bg-slate-100 rounded-xl flex justify-center items-center">
                 <img className="h-full" src={image} alt="" />
             </div>
