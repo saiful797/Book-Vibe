@@ -15,13 +15,59 @@ const BookDetails = () => {
     const {image,bookName,author,category,review,tags,totalPages,publisher,yearOfPublishing,rating} = book;
 
     const handleBooksRead = () =>{
-        saveReadBooksDetails(idInt);
-        toast('Added Successfully');
+        const id = saveReadBooksDetails(idInt);
+        if(id === idInt){
+            // toast('Already Exist');
+            toast.error('Already Exist', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+        else{
+            toast.success('Added Successfully', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+                
+            });
+        }
     }
 
     const handleWishListBook = () =>{
-        saveWishListBooks(idInt);
-        toast('Added Successfully');
+        const id = saveWishListBooks(idInt);
+        if(id === idInt){
+            // toast('Already Exist');
+            toast.error('Already Exist', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+        else{
+            toast.success('Added Successfully', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+                
+            });
+        }
     }
 
     return ( 
