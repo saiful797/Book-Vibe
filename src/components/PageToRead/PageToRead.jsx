@@ -45,7 +45,7 @@ const PageToRead = () => {
     return (
         <div className='flex justify-center'>
             <BarChart
-            width={600}
+            width={1000}
             height={500}
             data={data}
             margin={{

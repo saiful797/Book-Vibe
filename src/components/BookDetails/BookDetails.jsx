@@ -70,7 +70,7 @@ const BookDetails = () => {
     }
 
     return ( 
-        <div className="flex justify-around mt-10 gap-5 h-screen">
+        <div className="flex md:justify-around mt-10 gap-5 h-screen">
             <div className="w-1/2 p-5 bg-slate-100 rounded-xl flex justify-center items-center">
                 <img className="h-full" src={image} alt="" />
             </div>
