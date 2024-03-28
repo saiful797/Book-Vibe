@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 const WishListBooks = ({book}) => {
     const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book;
     return (
-        <div className="card card-side shadow-xl mt-10 border border-gray-400 gap-5">
-            <div className='p-5 bg-slate-100 rounded-2xl'>
+        <div className="md:flex rounded-xl shadow-xl mt-10 border border-gray-400 gap-5">
+            <div className='p-5 bg-slate-100 rounded-2xl flex justify-center items-center'>
                 <figure><img className='w-56 h-96 rounded-xl' src={image} alt="book"/></figure>
             </div>
             <div className="space-y-5 p-5 mt-5">
                 <h2 className="text-3xl font-bold">{bookName}</h2>
                 <p className='text-lg font-medium'>By: {author}</p>
-                <div className='md:flex justify-center items-center gap-2'>
+                <div className='md:flex justify-center items-center gap-2 space-y-3 md:space-y-0'>
                     <div className='flex items-center gap-3'>
                         <h1 className='text-xl font-medium'>Tags:</h1>
                         {
@@ -24,7 +24,7 @@ const WishListBooks = ({book}) => {
                         <p className='font-medium'>Year Of Publishing: {yearOfPublishing}</p>
                     </div>
                 </div>
-                <div className='flex gap-5'>
+                <div className='lg:flex gap-5 space-y-3 md;space-y-0'>
                     <div className='flex gap-2'>
                         <img src="https://i.ibb.co/QNLQcZr/people.png" alt="location" />
                         <p className='font-medium'>Publisher:-{publisher}</p>
