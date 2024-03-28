@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer className="p-10 bg-base-200 text-base-content text-center mt-10">
-            <div className="footer max-w-6xl mx-auto pl-36 md:pl-0">
+            <div className="footer max-w-6xl grid  place-content-center md:place-content-between	">
                 <aside>
                    <img className="w-20 rounded-3xl mx-auto" src="https://i.ibb.co/N9CjLr2/book-logo.png" alt="" />
                     <p className="text-base"><span className="footer-title text-3xl">Book Vibe</span><br/>Providing Books Since 1992</p>

@@ -21,7 +21,7 @@ const Header = () => {
                     {links}
                 </ul>
                 </div>
-                <a className="text-3xl font-extrabold">Book Vibe</a>
+                <a className="text-lg md:text-3xl font-extrabold">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

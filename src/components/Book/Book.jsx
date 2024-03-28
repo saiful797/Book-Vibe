@@ -18,8 +18,8 @@ const Book = ({book}) => {
                                     tags.map(tag => <Tags key={tag} tag={tag}></Tags>)
                                 }
                             </div>
-                            <h2 className="text-3xl font-semibold">{bookName}</h2>
-                            <p  className='text-xl font-medium'>By: <span>{author}</span></p>
+                            <h2 className="text-left text-3xl font-semibold">{bookName}</h2>
+                            <p  className='text-left text-xl font-medium'>By: <span>{author}</span></p>
                             <div className="card-actions flex justify-between">
                                 <div className='font-medium'>
                                     {category}
