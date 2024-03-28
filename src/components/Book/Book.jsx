@@ -6,7 +6,7 @@ const Book = ({book}) => {
     const {bookId,image,tags,bookName,author,category,rating}= book;
     return (
         <div>
-            <Link to={`/book/:${bookId}`}>
+            <Link to={`/book/:${bookId}/`}>
                 <button >
                     <div className="card card-compact w-96 bg-base-100 shadow-xl border-2 border-[#a8f29d]">
             

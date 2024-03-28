@@ -43,7 +43,7 @@ const ListedBooksDetails = ({book}) => {
                     <button className='btn md:w-40 rounded-3xl bg-[#d9e6f6] text-[#328EFF]'>Category: {category}</button>
                     <button className='btn md:w-40 rounded-3xl bg-[#efe6d3] text-[#FFAC33]'>Rating: {rating}</button>
                     <div>
-                        <Link to={`/book/:${bookId}`}>
+                        <Link to={`/book/:${bookId}/`}>
                             <button className='btn rounded-3xl bg-[#23BE0A] text-white md:w-40'>View Details</button>
                         </Link>
                     </div>

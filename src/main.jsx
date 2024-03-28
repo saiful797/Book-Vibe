@@ -24,26 +24,26 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/listedBooks",
+        path: "/listedBooks/",
         element: <ListedBooks></ListedBooks>,
         loader: () => fetch('/books.json')
       },
       {
-        path:'/book/:id',
+        path:'/book/:id/',
         element:<BookDetails></BookDetails>,
         loader: () => fetch('/books.json')
       },
       {
-        path:'/pageRead',
+        path:'/pageRead/',
         element:<PageToRead></PageToRead>,
         loader: () => fetch('/books.json')
       },
       {
-        path:'/about',
+        path:'/about/',
         element:<About></About>
       },
       {
-        path:'/blogs',
+        path:'/blogs/',
         element:<Blogs></Blogs>
       }
     ],

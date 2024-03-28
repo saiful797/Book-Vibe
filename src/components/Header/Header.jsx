@@ -4,10 +4,10 @@ const Header = () => {
     const links=<>
         <div className="gap-4 md:flex font-medium">
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
-            <li><NavLink to="/pageRead">Pages to Read</NavLink></li>
-            <li><NavLink to="/blogs">Blogs</NavLink></li>
-            <li><NavLink to="/about">About Us</NavLink></li>
+            <li><NavLink to="/listedBooks/">Listed Books</NavLink></li>
+            <li><NavLink to="/pageRead/">Pages to Read</NavLink></li>
+            <li><NavLink to="/blogs/">Blogs</NavLink></li>
+            <li><NavLink to="/about/">About Us</NavLink></li>
         </div>
     </>
     return (
