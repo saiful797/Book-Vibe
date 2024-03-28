@@ -1,57 +1,34 @@
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 const PageToRead = () => {
-    const colors = ['#0088FE', '#00C99F', '#FFBB28', '#FF8042', 'red', 'pink','#23BE0A','#02CD93'];
+    const colors = ['#23BE0A','#00C99F','red', '#FF8042', 'pink','#23BE0A','#FFBB28','#02CD93'];
 
     const data = [
     {
-        name: 'Page A',
-        uv: 4000,
+        name: 'Silent Patient',
+        uv: 336,
         pv: 2400,
-        amt: 2400,
+        amt: 336,
     },
     {
-        name: 'Page B',
-        uv: 3000,
+        name: 'Pride',
+        uv: 432,
         pv: 1398,
         amt: 2210,
     },
     {
-        name: 'Page C',
-        uv: 2000,
+        name: 'Goldfinch',
+        uv: 771,
         pv: 9800,
         amt: 2290,
     },
     {
-        name: 'Page D',
-        uv: 2780,
+        name: 'Night Circus',
+        uv: 512,
         pv: 3908,
         amt: 2000,
-    },
-    {
-        name: 'Page E',
-        uv: 1890,
-        pv: 4800,
-        amt: 2181,
-    },
-    {
-        name: 'Page F',
-        uv: 2390,
-        pv: 3800,
-        amt: 2500,
-    },
-    {
-        name: 'Page G',
-        uv: 3490,
-        pv: 4300,
-        amt: 2100,
-    },
-    {
-        name: 'Page H',
-        uv: 5000,
-        pv: 4300,
-        amt: 2100,
-    },
+    }
+    
     ];
 
     const getPath = (x, y, width, height) => {
@@ -70,8 +47,8 @@ const PageToRead = () => {
         
 
             <BarChart
-                width={1000}
-                height={500}
+                width={500}
+                height={400}
                 data={data}
                 margin={{
                     top: 20,
